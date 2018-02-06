@@ -5,8 +5,7 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     return nil
   end
-  value_min = nil
-  key_min = "IDK"
+  value_min = 1000
   name_hash.each  {|key, value|
     if value < value_min
       value_min = value
