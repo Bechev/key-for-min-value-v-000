@@ -9,6 +9,7 @@ def key_for_min_value(name_hash)
   key_min = "IDK"
   name_hash.each  {|key, value|
     if value < value_min
+      value_min = value
       key_min = key
     end
   }
